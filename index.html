@@ -5,6 +5,28 @@
   <meta charset="UTF-8">
   <title>iJaipuria Admission Letter Generator</title>
   <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+
+  <head>
+    <!-- Preload Roboto regular (weight 400) font -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff2" as="font"
+      type="font/woff2" crossorigin="anonymous" />
+    <!-- Preload Roboto bold (weight 700) font -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc-.woff2" as="font"
+      type="font/woff2" crossorigin="anonymous" />
+
+    <!-- Import Roboto font CSS for fallback and style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+
+    <style>
+      body {
+        font-family: 'Roboto', Arial, sans-serif;
+        /* Optional: smooth font rendering */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  </head>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="pdf.css">
   <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
