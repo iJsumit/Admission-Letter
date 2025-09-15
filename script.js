@@ -65,7 +65,7 @@ function getCurrentDateLongFormat() {
 }
 
 function generateDynamicPageAsBytes() {
-    return new Promise(resolve => {
+    return new Promise(async (resolve) => {
         const bAmount = parseFloat(document.getElementById('bAmount').value) || 0;
         const scholarship = parseFloat(document.getElementById('scholarship').value) || 0;
         const programFee = 50000; // update or make dynamic if needed
@@ -186,6 +186,11 @@ function generateDynamicPageAsBytes() {
         <p class="footer-note">Please note that if any of the installments are missed by the learner, then the class
             and/or content access will be revoked.</p>
     </div>`;
+
+        // Wait for fonts to be loaded before PDF generation
+        if (document.fonts && document.fonts.ready) {
+            await document.fonts.ready;
+        }
 
         html2pdf().set({
             margin: 15,
