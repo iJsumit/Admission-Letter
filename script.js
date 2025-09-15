@@ -94,6 +94,7 @@ function generateDynamicPageAsBytes() {
         const container = document.createElement('div');
         container.innerHTML = `
       <div id="pdf-content" class="pdf-page">
+      <div class="watermark">SAMPLE</div>
         <img src="logo.png" alt="Logo" class="pdf-logo">
         <h1 class="pdf-title">ADMISSION LETTER</h1>
         <div class="address">
