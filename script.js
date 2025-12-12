@@ -112,7 +112,7 @@ function generateDynamicPageAsBytes() {
             Your commitment to personal excellence makes you stand out as someone who will thrive within our
             learning environment.</p>
 
-        <p>This program is scheduled to start in February 2026. Until then, you will be learning via self paced
+        <p>This program is scheduled to start in January 2026. Until then, you will be learning via self paced
             courses, pre-reads & live master classes. We look forward to communicating with you on all aspects
             related to your upcoming learning journey and giving you the opportunity to get to know us better. Over
             the next few weeks, we will be in touch via email and phone.</p>
